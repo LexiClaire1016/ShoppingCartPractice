@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>利群商城--会员注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/register.css" />
+		<script src="../js/jquery-2.1.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/lazyLoad.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/register.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/cookie.js"></script>
+		<script src="../js/cartCookie.js"></script>
+	</head>
+
+	<body>
+		<!--------------------------header-info--注册导航----------------------->
+		<div id="header-info" class="w">
+			<div class="l left">
+				Hi，欢迎来到利群商城！&nbsp;
+				<a href="login.html">请登录</a>&nbsp;<a href="register.html">免费注册</a>
+			</div>
+			<div class="r">
+				<ul class="right">
+					<li class="l"><a href="#">我的订单</a></li>
+					<li class="l spe">|</li>
+					<li class="l">
+						<a href="#"><img src="../img/member_center.jpg" class="list-icon" />会员中心</a>
+					</li>
+					<li class="l spe">|</li>
+					<li class="l customer-service"><a href="javascript:void(0);">客户服务<img src="../img/customer_service.jpg" class="list-icon" /></a>
+						<ul>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">在线投诉</a></li>
+						</ul>
+					</li>
+					<li class="l spe">|</li>
+					<li class="l">
+						<a href="#"><img src="../img/liqun_mobile.jpg" class="list-icon" />手机利群</a>
+					</li>
+					<li class="l spe">|</li>
+					<li class="l"><a href="#">利群官网</a></li>
+					<li class="l spe">|</li>
+					<li class="l attention"><span>关注利群:</span><img src="../img/QRcode.jpg" alt="QRCode" class="share" /><img src="../img/tencentblog.jpg" alt="tencent" class="share" /><img src="../img/sina.jpg" alt="sina" class="share" />
+						<img src="../img/QR.jpg" alt="QR" id="QRcode" />
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--------------------------header-search--查询导航----------------------->
+		<div id="header-search" class="w">
+			<div class="l left">
+				<h1 class="l">
+					<a href="../index.html"><img src="../img/logo1.gif" alt="LOGO"/></a>
+				</h1>
+				<span class="l">
+					<a href="#"><img src="../img/sale.jpg" alt="sale" /></a>
+				</span>
+			</div>
+
+			<div class="l center">
+				<div class="search">
+					<img src="../img/search.jpg" />
+					<input type="text" value="洗衣液" id="search-text" />
+					<input type="image" src="../img/search_button.jpg" id="search" />
+				</div>
+				<ul class="search-word">
+					<li class="l">热门搜索：</li>
+					<li class="l"><a href="#">抢1111红包</a></li>
+					<li class="l"><a href="#">满199减20</a></li>
+					<li class="l"><a href="#">百货满减</a></li>
+					<li class="l"><a href="#">母婴钜惠</a></li>
+					<li class="l"><a href="#">九阳秒杀</a></li>
+				</ul>
+			</div>
+
+			<div class="r right">
+				<a href="cart.html"><img src="../img/go_cart.jpg" class="l cart" /></a>
+				<a href="#"><img src="../img/hot_tel.jpg" class="l tel" /></a>
+				<div class="cart-count">0</div>
+			</div>
+		</div>
+		<!--------------------------content----------------------->
+		<div id="content" class="w">
+			<form name="register" method="" action="">
+				<fieldset>
+					<ul>
+						<li>
+							<dl>
+								<dt class="l"><label for="idNumber"><span>*&nbsp;</span>账户名：</label></dt>
+								<dd class="l">
+									<input type="text" placeholder="用户名/手机号" id="idNumber" class="l"/>
+									<p class="l"></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt class="l"><label for="password"><span>*&nbsp;</span>请设置密码：</label></dt>
+								<dd class="l">
+									<input type="password" id="password"  class="l"/>
+									<p class="l"></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt class="l"><label for="password2"><span>*&nbsp;</span>请确认密码：</label></dt>
+								<dd class="l">
+									<input type="password" id="password2"  class="l"/>
+									<p class="l"></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt class="l"><label for="code"><span>*&nbsp;</span>验证码：</label></dt>
+								<dd class="l">
+									<input type="text" id="code" class="l"/>
+									<p class="l"></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt class="l"></dt>
+								<dd class="l code"><div></div><span>&nbsp;&nbsp;看不清？<a href="#">换一个</a></span></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt class="l"></dt>
+								<dd class="l checkBox"><input type="checkbox" checked="" />我已阅读并同意<a href="">《利群商城交易条款》</a></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt class="l"></dt>
+								<dd class="l"><a href="#"  class="registBtn"></a></dd>
+							</dl>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+		</div>
+		<!--------------------------footer----------------------------------->
+		<div id="footer" class="w">
+			<ul class="aboutUs">
+				<li class="l"><a href="#">关于我们</a></li>
+				<li class="l"><a href="#">联系我们</a></li>
+				<li class="l"><a href="#">诚聘英才</a></li>
+				<li class="l"><a href="#">手机利群</a></li>
+				<li class="l"><a href="#">销售联盟</a></li>
+				<li class="l"><a href="#">友情连接</a></li>
+				<li class="l"><a href="#">网站合作</a></li>
+				<li class="l"><a href="#">帮助中心</a></li>
+				<li class="l last"><a href="#">版权说明</a></li>
+			</ul>
+			<ul class="aboutLiqun">
+				<li class="l"><a href="#">利群集团</a></li>
+				<li class="l"><a href="#">百货集团</a></li>
+				<li class="l"><a href="#">利群网</a></li>
+				<li class="l"><a href="#">利群酒店</a></li>
+				<li class="l"><a href="#">利群房地产</a></li>
+				<li class="l"><a href="#">利群旅行社</a></li>
+				<li class="l"><a href="#">利群药品</a></li>
+				<li class="l"><a href="#">利群影城</a></li>
+				<li class="l"><a href="#">利群水站</a></li>
+				<li class="l last"><a href="#">利群家政</a></li>
+			</ul>
+			<p>鲁ICP证09054331号-2 Copyright©2004-2015 利群集团青岛电子商务有限公司 版权所有<img src="" data-src="../img/pic1.gif"/></p>
+		</div>
+	</body>
+
+</html>

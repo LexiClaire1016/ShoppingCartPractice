@@ -1,0 +1,247 @@
+/******************************head-info*****************************/
+#header-info{
+	height:24px;
+}
+#header-info .left{
+	width:280px;
+	height:24px;
+	font-size:13px;
+}
+#header-info .left a{
+	width: 60px;
+	height:24px;
+	line-height: 24px;
+	display: inline-block;
+	background: url(../img/left_star.jpg) no-repeat ;
+	padding-left:15px;
+	text-align: center;
+	color:#525252;
+}
+#header-info .right {
+	width:410px;
+	height:24px;
+	line-height: 24px;
+}
+#header-info .right li{
+	text-align: center;
+	width:auto;
+	height:24px;
+	padding:0px 5px;
+}
+#header-info .right li.spe{
+	text-align: center;
+	width:5px;
+	height:24px;
+	margin:0px;
+	padding:0px;
+	color:#ccc;
+}
+#header-info .right li a{
+	color:#686868;
+	display: inline-block;
+}
+#header-info .right li .icon{
+	display: inline-block;
+	vertical-align: middle;
+	padding:0 2px;
+}
+#header-info .right li .share{
+	display: inline-block;
+	width:16px;
+	height:16px;
+	vertical-align: text-bottom;
+	padding:0 2px;
+}
+/*************************flowchartImg***********************/
+#header .flowImg{
+	height:160px;
+	position: relative;
+}
+#header h1{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:344px;
+	height:84px;
+}
+/***********************content*************************/
+#content{
+	height:auto;
+}
+#content .cart{
+	width:998px;
+	height:auto;
+	border:1px solid #ccc;
+	line-height: 33px;
+	text-align: center;
+	display:none;
+}
+#content .cart .cart_title,#content .cart .cart_price{
+	width:998px;
+	height:33px;
+	background:#dedede;
+}
+#content .cart  ul{
+	width:998px;
+	height:33px;
+}
+#content .cart ul li{
+	height:auto;
+}
+#content .cart ul li.productName{
+	width:30%;
+}
+#content .cart ul li.productPrice{
+	width:10%;
+}
+#content .cart ul li.productNumber{
+	width:15%;
+}
+#content .cart ul li.productCount{
+	width:10%;
+}
+#content .cart ul li.pointCount{
+	width:10%;
+}
+#content .cart ul li.deleteProduct{
+	width:10%;
+}
+#content .cart ul li.others{
+	width:10%;
+}
+#content .cart .cart_detail{
+	width:998px;
+	height:auto;
+}
+#content .cart .cart_detail ul{
+	width:998px;
+	height:78px;
+}
+#content .cart .cart_detail ul li{
+	height:78px;
+	line-height: 78px;
+}
+#content .cart .cart_detail ul li.productName img{
+	width:78px;
+	height:78px;
+	display: inline-block;
+	margin-left:50px;
+}
+#content .cart .cart_detail ul li.productName p{
+	width:140px;
+	height:50px;
+	margin-top:20px;
+	text-align: left;
+	padding-left:20px;
+	line-height: 20px;
+}
+#content .cart .cart_detail ul li.productNumber input{
+	width:30px;
+	height:16px;
+	padding:2px;
+	text-align: center;
+}
+#content .cart .cart_detail ul li.productNumber button{
+	width:15px;
+	height:15px;
+	line-height:15px;
+	text-align: center;
+	background: url(../img/icon.png) no-repeat;
+}
+#content .cart .cart_detail ul li.productNumber button.minusBtn{
+	background-position: -218px -192px;
+}
+#content .cart .cart_detail ul li.productNumber button.plusBtn{
+	background-position: -233px -192px;
+}
+
+#content .box{
+	width:100%;
+	height:35px;
+}
+#content .box .price{
+	width:743px;
+	height:35px;
+	border:1px solid #ccc;
+	background: #eee;
+}
+#content .box .price p{
+	height:35px;
+	line-height: 35px;
+	padding-right:20px;
+}
+#content .box .price p #price{
+	height:35px;
+	line-height: 35px;
+	font-size:20px;
+}
+#content .box .price p span{
+	color:#cc0809;
+}
+#content .box input{
+	width:125px;
+	height:37px;
+}
+/***********************footer*************************/
+#footer {
+	height:74px;
+	margin-top:20px;
+}
+#footer a{
+	color:#929292;
+}
+#footer a:hover{
+	text-decoration: none;
+}
+#footer .aboutUs{
+	width:615px;
+	height:16px;
+	line-height: 16px;
+	margin-left:300px;
+}
+#footer .aboutUs li{
+	width:10%;
+	text-align: center;
+	border-right: 1px solid #ccc;
+}
+#footer .aboutUs li.last{
+	border:0px;
+}
+#footer .aboutLiqun {
+	width:690px;
+	height:16px;
+	line-height: 16px;
+	margin-left:270px;	
+}
+#footer .aboutLiqun li{
+	width:9%;
+	height:16px;
+	line-height: 16px;	
+	text-align: center;
+	border-right:1px solid #ccc;
+}
+#footer .aboutLiqun li.last{
+	border:0px;
+}
+#footer p {
+	width:600px;
+	height:20px;
+	line-height: 20px;	
+	color:#ccc;
+	margin-left:350px;
+}
+#footer p img{
+	display: inline-block;
+	height:20px;
+	width:20px;
+}
+
+
+
+
+
+
+
+
+
+

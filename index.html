@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>利群网上商城</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/swiper-3.4.0.min.css" />-->
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script src="js/cookie.js"></script>
+		<script src="js/startMove.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/lazyLoad.js"></script>
+		<script src="js/cartCookie.js"></script>
+		<!--<script src="js/swiper-3.4.0.min.js"></script>
+		<script src="js/lunbo.js"></script>-->
+	</head>
+
+	<body>
+		<!--------------------------top--广告图----------------------->
+		<div id="top" class="w">
+			<img src="img/top-img.jpg" />
+		</div>
+		<!--------------------------header-info--注册导航----------------------->
+		<div id="header-info" class="w">
+			<div class="l left">
+				Hi，欢迎来到利群商城！&nbsp;
+				<a href="html/login.html" target="_blank">请登录</a>&nbsp;<a href="html/register.html" target="_blank">免费注册</a>
+			</div>
+			<div class="r">
+				<ul class="right">
+					<li class="l"><a href="#">我的订单</a></li>
+					<li class="l spe">|</li>
+					<li class="l">
+						<a href="#"><img src="img/member_center.jpg" class="list-icon" />会员中心</a>
+					</li>
+					<li class="l spe">|</li>
+					<li class="l customer-service"><a href="javascript:void(0);">客户服务<img src="img/customer_service.jpg" class="list-icon" /></a>
+						<ul>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">在线投诉</a></li>
+						</ul>
+					</li>
+					<li class="l spe">|</li>
+					<li class="l">
+						<a href="#"><img src="img/liqun_mobile.jpg" class="list-icon" />手机利群</a>
+					</li>
+					<li class="l spe">|</li>
+					<li class="l"><a href="#">利群官网</a></li>
+					<li class="l spe">|</li>
+					<li class="l attention"><span>关注利群:</span><img src="img/QRcode.jpg" alt="QRCode" class="share" /><img src="img/tencentblog.jpg" alt="tencent" class="share" /><img src="img/sina.jpg" alt="sina" class="share" />
+						<img src="img/QR.jpg" alt="QR" id="QRcode" />
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--------------------------header-search--查询导航----------------------->
+		<div id="header-search" class="w">
+			<div class="l left">
+				<h1 class="l">
+					<a href="index.html"><img src="img/logo.gif" alt="LOGO"/></a>
+				</h1>
+				<span class="l">
+					<a href="#"><img src="img/sale.jpg" alt="sale" /></a>
+				</span>
+			</div>
+
+			<div class="l center">
+				<div class="search">
+					<img src="img/search.jpg" />
+					<input type="text" value="洗衣液" id="search-text" />
+					<input type="image" src="img/search_button.jpg" id="search" />
+				</div>
+				<ul class="search-word">
+					<li class="l">热门搜索：</li>
+					<li class="l"><a href="#">抢1111红包</a></li>
+					<li class="l"><a href="#">满199减20</a></li>
+					<li class="l"><a href="#">百货满减</a></li>
+					<li class="l"><a href="#">母婴钜惠</a></li>
+					<li class="l"><a href="#">九阳秒杀</a></li>
+				</ul>
+			</div>
+
+			<div class="r right">
+				<a href="html/cart.html"><img src="img/go_cart.jpg" class="l cart" /></a>
+				<a href="#"><img src="img/hot_tel.jpg" class="l tel" /></a>
+				<div class="cart-count">0</div>
+			</div>
+		</div>
+		<!--------------------------nav--菜单栏----------------------->
+		<div id="nav" class="w">
+			<ul>
+				<li class="l catagories">全部商品分类</li>
+				<li class="l index now"><a href="index.html">首页</a></li>
+				<li class="l liqun"><a href="html/liqunwangshang.html">利群网商</a><img src="img/new.jpg" class="new" /></li>
+				<li class="l world"><a href="#">全球购</a><img src="img/hot.jpg" class="hot" /></li>
+				<li class="l"><a href="#">生鲜</a></li>
+				<li class="l"><a href="#">超市</a></li>
+				<li class="l"><a href="#">母婴馆</a></li>
+				<li class="l"><a href="#">利群团</a></li>
+				<li class="l"><a href="#">医药</a></li>
+				<li class="l"><a href="#">积分商城</a></li>
+				<li class="r redpacket">
+					<a href="#"><img src="img/redpacket.jpg" /></a>
+				</li>
+			</ul>
+		</div>
+		<!--------------------------sperate--菜单栏分割线----------------------->
+		<div id="sperate"></div>
+		<!--------------------------banner--详细菜单以及轮播图----------------------->
+		<div id="banner" class="w">
+			<!------------总菜单------------>
+			<div class="l left">
+				<ul>
+					<li>
+						<h3 class="worldshop">全球购</h3>
+						<div><a href="html/goodsList.html">母婴</a><a href="html/goodsList.html">食品保健</a><a href="html/goodsList.html">美妆</a></div>
+						<div class="pop">
+							<div class="l left">
+								<div class="up">
+									<div class="title">
+										<img src="img/tab-icon.jpg" alt="" class="l" />
+										<h3 class="l">母婴用品</h3>
+										<a href="html/goodsList.html" class="r">更多&nbsp;&nbsp;&gt;</a>
+									</div>
+									<ul>
+										<li class="l"><a href="html/goodsList.html">奶粉</a></li>
+										<li class="l"><a href="html/goodsList.html">营养辅食</a></li>
+										<li class="l"><a href="html/goodsList.html">尿裤湿巾</a></li>
+										<li class="l last"><a href="html/goodsList.html">孕产妇专区</a></li>
+										<li class="l last"><a href="html/goodsList.html">洗护用品</a></li>
+									</ul>
+									<div class="brand">
+										<h4>品牌</h4>
+										<a href="html/goodsList.html">爱他美A2</a><a href="html/goodsList.html">PlatinumKaricare</a><a href="html/goodsList.html">惠氏</a><a href="html/goodsList.html">Nutrilon</a><a href="html/goodsList.html">贝拉米</a><a href="html/goodsList.html">泓乐</a>
+										<a
+											href="html/goodsList.html">特福芬</a><a href="html/goodsList.html">喜宝</a><a href="html/goodsList.html">Friso</a><a href="html/goodsList.html">美赞臣</a><a href="html/goodsList.html">Ddrops</a><a href="html/goodsList.html">童年时光</a><a href="html/goodsList.html">小熊糖</a><a href="#">世界最好</a>
+											<a
+												href="#">Nordic Naturals</a><a href="#">嘉宝</a><a href="#">大王</a><a href="#">花王</a><a href="#">尤妮佳</a><a href="#">艾维诺 </a><a href="#">加州宝宝</a>
+									</div>
+								</div>
+								<div class="down">
+									<div class="title">
+										<img src="img/tab-icon2.jpg" alt="" class="l" />
+										<h3 class="l">家居日用</h3>
+										<a href="html/goodsList.html" class="r">更多&nbsp;&nbsp;&gt;</a>
+									</div>
+									<ul>
+										<li class="l"><a href="html/goodsList.html">生活日用</a></li>
+										<li class="l last"><a href="html/goodsList.html">家居家纺</a></li>
+									</ul>
+									<div class="brand">
+										<h4>品牌</h4>
+										<a href="html/goodsList.html">膳魔师</a><a href="html/goodsList.html">象印</a>
+									</div>
+								</div>
+							</div>
+							<div class="l center">
+								<div class="title">
+									<img src="img/tab-icon3.jpg" alt="" class="l" />
+									<h3 class="l">食品保健</h3>
+									<a href="html/goodsList.html" class="r">更多&nbsp;&nbsp;&gt;</a>
+								</div>
+								<ul>
+									<li class="l"><a href="html/goodsList.html">进口食品</a></li>
+									<li class="l"><a href="html/goodsList.html">基础保健</a></li>
+									<li class="l"><a href="html/goodsList.html">功能保健</a></li>
+									<li class="l last"><a href="html/goodsList.html">利群全球购</a></li>
+									<li class="l last"><a href="html/goodsList.html">轻松购全球</a></li>
+								</ul>
+								<div class="brand">
+									<h4>品牌</h4>
+									<a href="html/goodsList.html">woohoo natural</a><a href="html/goodsList.html"> NeoCell</a><a href="html/goodsList.html">Twinlab Cal-Quick</a><a href="html/goodsList.html">佳思敏</a><a href="html/goodsList.html">卡乐比</a><a href="html/goodsList.html">诺奥</a>
+									<a
+										href="html/goodsList.html">Swisse</a><a href="html/goodsList.html">澳佳宝</a><a href="html/goodsList.html">Doppelherz</a><a href="html/goodsList.html">Caudalie</a><a href="html/goodsList.html">健安喜</a><a href="html/goodsList.html">Murad</a><a href="html/goodsList.html"> BioAstinPuritan‘s Pride</a>
+										<a
+											href="html/goodsList.html">安利</a><a href="html/goodsList.html">自然之宝</a><a href="html/goodsList.html">山本汉方</a><a href="html/goodsList.html">Salus Floradixmetabolic</a>
+								</div>
+							</div>
+							<div class="l right">
+								<div class="title">
+									<img src="img/tab-icon4.jpg" alt="" class="l" />
+									<h3 class="l">美妆个户</h3>
+									<a href="html/goodsList.html" class="r">更多&nbsp;&nbsp;&gt;</a>
+								</div>
+								<ul>
+									<li class="l"><a href="html/goodsList.html">个人护理</a></li>
+									<li class="l"><a href="html/goodsList.html">口腔护理</a></li>
+									<li class="l last"><a href="html/goodsList.html">面部护肤</a></li>
+									<li class="l"><a href="html/goodsList.html">靓丽彩妆</a></li>
+									<li class="l"><a href="html/goodsList.html">美容工具</a></li>
+									<li class="l last"><a href="html/goodsList.html">身体护理</a></li>
+								</ul>
+								<div class="brand">
+									<h4>品牌</h4>
+									<a href="html/goodsList.html">春雨面膜</a><a href="html/goodsList.html"> 可莱丝</a><a href="html/goodsList.html">贵妇眼膜</a><a href="html/goodsList.html">九朵云</a><a href="html/goodsList.html">雪花秀</a><a href="html/goodsList.html">悦诗风吟</a><a href="html/goodsList.html">it＇s skin</a>
+									<a
+										href="html/goodsList.html">无印良品</a><a href="html/goodsList.html">SANA/莎娜</a><a href="html/goodsList.html">LOSHI/北海道</a><a href="html/goodsList.html">高丝</a><a href="html/goodsList.html">Kanebo/嘉娜宝</a><a href="html/goodsList.html">牛牌</a><a href="html/goodsList.html">DHC</a>
+										<a
+											href="html/goodsList.html">资生堂</a><a href="html/goodsList.html">谜尚</a><a href="html/goodsList.html">the face shop</a><a href="html/goodsList.html">爱茉莉</a><a href="html/goodsList.html">珂莱欧</a><a href="html/goodsList.html">兰芝</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<h3 class="food">民生食品</h3>
+						<div><a href="html/goodsList.html">粮油调味</a><a href="#">生鲜</a></div>
+					</li>
+					<li>
+						<h3 class="drink">零食酒水</h3>
+						<div><a href="html/goodslist.html	">休闲零食</a><a href="html/goodslist.html">饮料</a><a href="html/goodslist.html">酒</a></div>
+					</li>
+					<li>
+						<h3 class="makeup">美妆洗护</h3>
+						<div><a href="html/goodslist.html">洗护</a><a href="html/goodslist.html">面部护理</a><a href="html/goodslist.html">彩妆</a></div>
+					</li>
+					<li>
+						<h3 class="store">日用百货</h3>
+						<div><a href="html/goodsList.html">生活用纸 </a><a href="html/goodslist.html">清洁</a><a href="html/goodslist.html">居家</a></div>
+					</li>
+					<li>
+						<h3 class="toy">母婴玩具</h3>
+						<div><a href="html/goodslist.html">奶粉</a><a href="html/goodslist.html">尿裤 </a><a href="html/goodslist.html">洗护</a> <a href="html/goodslist.html">喂养</a></div>
+					</li>
+					<li>
+						<h3 class="digital">手机数码</h3>
+						<div><a href="html/goodslist.html">手机</a><a href="html/goodslist.html">电脑</a>
+							<a href="相机"></a> <a href="html/goodslist.html">办公</a></div>
+					</li>
+					<li>
+						<h3 class="electric">家用电器</h3>
+						<div><a href="html/goodslist.html">大家电</a><a href="html/goodslist.html">小家电</a><a href="html/goodslist.html">热水器</a></div>
+					</li>
+					<li>
+						<h3 class="fiction">虚拟服务</h3>
+						<div><a href="html/goodslist.html">便民</a>
+							<a href="旅游"></a>
+							<a href="图书"></a><a href="html/goodslist.html">缴费</a><a href="html/goodslist.html">图书</a></div>
+					</li>
+				</ul>
+			</div>
+			<!------------轮播图------------>
+			<div class="l center">
+				<ul class="picture">
+					<li class="l">
+						<a href="html/goodslist.html"><img src="img/banner1.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="html/goodslist.html"><img src="img/banner2.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="html/goodslist.html"><img src="img/banner3.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="html/goodslist.html"><img src="img/banner4.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="html/goodslist.html"><img src="img/banner5.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="html/goodslist.html"><img src="img/banner6.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="html/goodslist.html"><img src="img/banner7.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="html/goodslist.html"><img src="img/banner8.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="#"><img src="img/banner9.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="#"><img src="img/banner10.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="#"><img src="img/banner1.jpg" alt="" /></a>
+					</li>
+				</ul>
+				<ul class="oNumber">
+					<li class="l num active">1</li>
+					<li class="l num">2</li>
+					<li class="l num">3</li>
+					<li class="l num">4</li>
+					<li class="l num">5</li>
+					<li class="l num">6</li>
+					<li class="l num">7</li>
+					<li class="l num">8</li>
+					<li class="l num">9</li>
+					<li class="l num">10</li>
+				</ul>
+			</div>
+			<!------------右侧最新内容------------>
+			<div class="r right">
+				<div class="up">
+					<h3>利群快报</h3>
+					<p class="new red"><a href="#">10月份邮储返现延迟发放公告</a></p>
+					<p class="red"><a href="#">小家电惊喜返场 一大波优惠袭来</a></p>
+					<p><a href="#">数码惊喜返场 狂欢继续</a></p>
+					<p><a href="#">洗护专场惊喜返场 满额赠好礼！</a></p>
+					<p><a href="#">风靡全球保健品 第二件半价</a></p>
+					<p><a href="#">食品专场—爆款返场 不止5折</a></p>
+					<p><a href="#">百货专场—爆款返场 不止5折</a></p>
+					<p><a href="#">尿裤惊喜返场 全场低至5折</a></p>
+					<p><a href="#">狂欢整点购 返111元超级神券</a></p>
+				</div>
+				<div class="down">
+					<ul class="circleshow">
+						<li class="l circle active-color"></li>
+						<li class="l circle"></li>
+						<li class="l circle"></li>
+					</ul>
+					<div class="showBanner">
+						<ul class="littleBanner">
+							<li class="l">
+								<a href="#"><img src="img/banner01.jpg" alt="" /></a>
+							</li>
+							<li class="l">
+								<a href="#"><img src="img/banner02.jpg" alt="" /></a>
+							</li>
+							<li class="l">
+								<a href="#"><img src="img/banner03.jpg" alt="" /></a>
+							</li>
+							<li class="l">
+								<a href="#"><img src="img/banner01.jpg" alt="" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--------------------------content--------------------------------->
+		<div id="content" class="w">
+			<!----------------contentA---------------->
+			<div class="contentA">
+				<div class="l left"><img src="" data-src="img/contentA.gif" /></div>
+				<div class="r right">
+					<ul class="bannerA">
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-01.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-02.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-03.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-04.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-05.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-06.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-07.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-08.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-09.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-10.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-11.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-12.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-01.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-02.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-03.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/content-a-04.jpg" /></a>
+						</li>
+					</ul>
+					<div class="leftBtn"></div>
+					<div class="rightBtn"></div>
+				</div>
+			</div>
+			<!----------------contentB---------------->
+			<div class="contentB">
+				<div class="l left"><img src="" data-src="img/contentB.jpg" /></div>
+				<div class="l center">
+					<ul class="bannerB">
+						<li class="l up">
+							<ul>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-01.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-02.jpg" /></dt>
+											<dd>
+												清风几何系列卷纸B20AT8ZN
+												<p>抢购价:<span>￥16.99</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-03.jpg" /></dt>
+											<dd>
+												好奇金装国产尿裤S60+12/4641
+												<p>抢购价:<span>￥69.00</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-04.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-05.jpg" /></dt>
+											<dd>
+												海天金标生抽酿造酱油1.28L
+												<p>抢购价:<span>￥11.50</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-06.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-07.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-08.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="l down">
+							<ul>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-09.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-10.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-11.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-12.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-13.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-14.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-15.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-16.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="l">
+							<ul>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-01.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-02.jpg" /></dt>
+											<dd>
+												清风几何系列卷纸B20AT8ZN
+												<p>抢购价:<span>￥16.99</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-03.jpg" /></dt>
+											<dd>
+												好奇金装国产尿裤S60+12/4641
+												<p>抢购价:<span>￥69.00</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-04.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-05.jpg" /></dt>
+											<dd>
+												海天金标生抽酿造酱油1.28L
+												<p>抢购价:<span>￥11.50</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-06.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-07.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+								<li class="l">
+									<a href="html/goods.html">
+										<dl>
+											<dt><img src="" data-src="img/content-b-08.jpg" /></dt>
+											<dd>
+												福临门稻花香米5KG-
+												<p>抢购价:<span>￥76.90</span></p>
+											</dd>
+										</dl>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="leftButton"></div>
+					<div class="rightButton"></div>
+				</div>
+				<div class="r right">
+					<div>
+						<a href="html/goods.html"><img src="" data-src="img/food.jpg" /></a>
+					</div>
+					<div>
+						<a href="html/goods.html"><img src="" data-src="img/store.jpg" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--------------------------middleAd--中间广告图--------------------------------->
+		<div id="advertise" class="w">
+			<img src="" data-src="img/middleAd.jpg" />
+		</div>
+		<!--------------------------floor1--第一层--------------------------------->
+		<div id="floor1" class="w">
+			<div class="l left">
+				<ul class="up">
+					<li class="l"><a href="html/goods.html">食用油</a></li>
+					<li class="l"><a href="html/goods.html">大米</a></li>
+					<li class="l"><a href="html/goods.html">面粉</a></li>
+					<li class="l"><a href="html/goods.html">挂面</a></li>
+					<li class="l"><a href="html/goods.html">厨房调味</a></li>
+					<li class="l"><a href="html/goods.html">白酒</a></li>
+					<li class="l"><a href="html/goods.html">啤酒</a></li>
+					<li class="l"><a href="html/goods.html">水</a></li>
+					<li class="l"><a href="html/goods.html">麦片</a></li>
+					<li class="l"><a href="html/goods.html">饼干糕点</a></li>
+					<li class="l"><a href="html/goods.html">蔬菜</a></li>
+					<li class="l"><a href="html/goods.html">洗衣液</a></li>
+					<li class="l"><a href="html/goods.html">卷纸</a></li>
+					<li class="l"><a href="html/goods.html">抽纸</a></li>
+				</ul>
+				<div class="down">
+					<ul class="l littlecircle">
+						<li class="l"></li>
+						<li class="l"></li>
+						<li class="l"></li>
+					</ul>
+					<ul class="l floor1banner">
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/floor1-bannerImg2.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/floor1-bannerImg3.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="l center">
+				<ul class="tab1">
+					<li class="l">
+						<a href="html/goods.html"><img src="" data-src="img/floor1-tab-img1.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="html/goods.html"><img src="" data-src="img/floor1-tab-img2.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="html/goods.html"><img src="" data-src="img/floor1-tab-img3.jpg" alt="" /></a>
+					</li>
+				</ul>
+				<ul class="select">
+					<li class="l over"></li>
+					<li class="l "></li>
+					<li class="l"></li>
+				</ul>
+			</div>
+			<div class="r right">
+				<div class="up">
+					<ul class="floor1title">
+						<li class="l index">精选特卖</li>
+						<li class="l">粮油生鲜</li>
+						<li class="l">零食酒水</li>
+						<li class="l">纸品湿巾</li>
+						<li class="l">清洁用品</li>
+					</ul>
+				</div>
+				<div class="down">
+					<ul class="l left">
+						<li class="l .index">
+							<a href="html/goods.html">
+								<dl>
+									<dt><img src="" data-src="img/floor1-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html">
+								<dl>
+									<dt><img src="" data-src="img/floor1-img2.jpg" alt="" /></dt>
+									<dd>
+										青岛啤酒经典10度箱啤500ml
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html">
+								<dl>
+									<dt><img src="" data-src="img/floor1-img3.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html">
+								<dl>
+									<dt><img src="" data-src="img/floor1-img4.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html">
+								<dl>
+									<dt><img src="" data-src="img/floor1-img5.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="html/goods.html">
+								<dl>
+									<dt><img src="" data-src="img/floor1-img6.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+					<ul class="r right">
+						<li>
+							<a href="html/goods.html"><img src="" data-src="img/img.jpg" /></a>
+						</li>
+						<li>
+							<a href="html/goods.html"><img src="" data-src="img/img2.jpg" /></a</li>
+								<li>
+									<a href="html/goods.html"><img src="" data-src="img/img.jpg" /></a</li>
+										<li>
+											<a href="html/goods.html"><img src="" data-src="img/img2.jpg" /></a</li>
+												<li>
+													<a href="html/goods.html"><img src="" data-src="img/img.jpg" /></a</li>
+														<li>
+															<a href="html/goods.html"><img src="" data-src="img/img2.jpg" /></a</li>
+																<li>
+																	<a href="html/goods.html"><img src="" data-src="img/img.jpg" /></a</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--------------------------floor2--第二层--------------------------------->
+		<div id="floor2" class="w">
+			<div class="l left">
+				<ul class="up">
+					<li class="l"><a href="html/goods.html">食用油</a></li>
+					<li class="l"><a href="html/goods.html">大米</a></li>
+					<li class="l"><a href="html/goods.html">面粉</a></li>
+					<li class="l"><a href="#">挂面</a></li>
+					<li class="l"><a href="#">厨房调味</a></li>
+					<li class="l"><a href="#">白酒</a></li>
+					<li class="l"><a href="#">啤酒</a></li>
+					<li class="l"><a href="#">水</a></li>
+					<li class="l"><a href="#">麦片</a></li>
+					<li class="l"><a href="#">饼干糕点</a></li>
+					<li class="l"><a href="#">蔬菜</a></li>
+					<li class="l"><a href="#">洗衣液</a></li>
+					<li class="l"><a href="#">卷纸</a></li>
+					<li class="l"><a href="#">抽纸</a></li>
+				</ul>
+				<div class="down">
+					<ul class="l littlecircle">
+						<li class="l white"></li>
+						<li class="l"></li>
+						<li class="l"></li>
+					</ul>
+					<ul class="l floor2banner">
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg2.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg3.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="l center">
+				<ul class="tab1">
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor2-tab-img1.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor2-tab-img2.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor2-tab-img3.jpg" alt="" /></a>
+					</li>
+				</ul>
+				<ul class="select">
+					<li class="l over"></li>
+					<li class="l "></li>
+					<li class="l"></li>
+				</ul>
+			</div>
+			<div class="r right">
+				<div class="up">
+					<ul class="floor2title">
+						<li class="l">精选特卖</li>
+						<li class="l">粮油生鲜</li>
+						<li class="l">零食酒水</li>
+						<li class="l">纸品湿巾</li>
+						<li class="l">清洁用品</li>
+					</ul>
+				</div>
+				<div class="down">
+					<ul class="l left">
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor2-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor2-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor2-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor2-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor2-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor2-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+					<ul class="r right">
+						<li>
+							<a href="#"><img src="" data-src="img/img.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+								<li>
+									<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+										<li>
+											<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+												<li>
+													<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+														<li>
+															<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+																<li>
+																	<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--------------------------floor3--第三层--------------------------------->
+		<div id="floor3" class="w">
+			<div class="l left">
+				<ul class="up">
+					<li class="l"><a href="#">食用油</a></li>
+					<li class="l"><a href="#">大米</a></li>
+					<li class="l"><a href="#">面粉</a></li>
+					<li class="l"><a href="#">挂面</a></li>
+					<li class="l"><a href="#">厨房调味</a></li>
+					<li class="l"><a href="#">白酒</a></li>
+					<li class="l"><a href="#">啤酒</a></li>
+					<li class="l"><a href="#">水</a></li>
+					<li class="l"><a href="#">麦片</a></li>
+					<li class="l"><a href="#">饼干糕点</a></li>
+					<li class="l"><a href="#">蔬菜</a></li>
+					<li class="l"><a href="#">洗衣液</a></li>
+					<li class="l"><a href="#">卷纸</a></li>
+					<li class="l"><a href="#">抽纸</a></li>
+				</ul>
+				<div class="down">
+					<ul class="l littlecircle">
+						<li class="l white"></li>
+						<li class="l"></li>
+						<li class="l"></li>
+					</ul>
+					<ul class="l floor3banner">
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg2.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg3.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="l center">
+				<ul class="tab1">
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor3-tab-img1.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor3-tab-img2.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor3-tab-img3.jpg" alt="" /></a>
+					</li>
+				</ul>
+				<ul class="select">
+					<li class="l over"></li>
+					<li class="l "></li>
+					<li class="l"></li>
+				</ul>
+			</div>
+			<div class="r right">
+				<div class="up">
+					<ul class="floor3title">
+						<li class="l">精选特卖</li>
+						<li class="l">粮油生鲜</li>
+						<li class="l">零食酒水</li>
+						<li class="l">纸品湿巾</li>
+						<li class="l">清洁用品</li>
+					</ul>
+				</div>
+				<div class="down">
+					<ul class="l left">
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor3-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor3-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor3-img1.jpg"alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor3-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor3-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor3-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+					<ul class="r right">
+						<li>
+							<a href="#"><img src="" data-src="img/img.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+								<li>
+									<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+										<li>
+											<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+												<li>
+													<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+														<li>
+															<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+																<li>
+																	<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--------------------------floor4--第四层--------------------------------->
+		<div id="floor4" class="w">
+			<div class="l left">
+				<ul class="up">
+					<li class="l"><a href="#">食用油</a></li>
+					<li class="l"><a href="#">大米</a></li>
+					<li class="l"><a href="#">面粉</a></li>
+					<li class="l"><a href="#">挂面</a></li>
+					<li class="l"><a href="#">厨房调味</a></li>
+					<li class="l"><a href="#">白酒</a></li>
+					<li class="l"><a href="#">啤酒</a></li>
+					<li class="l"><a href="#">水</a></li>
+					<li class="l"><a href="#">麦片</a></li>
+					<li class="l"><a href="#">饼干糕点</a></li>
+					<li class="l"><a href="#">蔬菜</a></li>
+					<li class="l"><a href="#">洗衣液</a></li>
+					<li class="l"><a href="#">卷纸</a></li>
+					<li class="l"><a href="#">抽纸</a></li>
+				</ul>
+				<div class="down">
+					<ul class="l littlecircle">
+						<li class="l white"></li>
+						<li class="l"></li>
+						<li class="l"></li>
+					</ul>
+					<ul class="l floor4banner">
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg2.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg3.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="l center">
+				<ul class="tab1">
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor4-tab-img1.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor4-tab-img2.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor4-tab-img3.jpg" alt="" /></a>
+					</li>
+				</ul>
+				<ul class="select">
+					<li class="l over"></li>
+					<li class="l "></li>
+					<li class="l"></li>
+				</ul>
+			</div>
+			<div class="r right">
+				<div class="up">
+					<ul class="floor4title">
+						<li class="l">精选特卖</li>
+						<li class="l">粮油生鲜</li>
+						<li class="l">零食酒水</li>
+						<li class="l">纸品湿巾</li>
+						<li class="l">清洁用品</li>
+					</ul>
+				</div>
+				<div class="down">
+					<ul class="l left">
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor4-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor4-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor4-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor4-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor4-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor4-img1.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+					<ul class="r right">
+						<li>
+							<a href="#"><img src="" data-src="img/img.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+								<li>
+									<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+										<li>
+											<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+												<li>
+													<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+														<li>
+															<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+																<li>
+																	<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--------------------------floor5--第五层--------------------------------->
+		<div id="floor5" class="w">
+			<div class="l left">
+				<ul class="up">
+					<li class="l"><a href="#">食用油</a></li>
+					<li class="l"><a href="#">大米</a></li>
+					<li class="l"><a href="#">面粉</a></li>
+					<li class="l"><a href="#">挂面</a></li>
+					<li class="l"><a href="#">厨房调味</a></li>
+					<li class="l"><a href="#">白酒</a></li>
+					<li class="l"><a href="#">啤酒</a></li>
+					<li class="l"><a href="#">水</a></li>
+					<li class="l"><a href="#">麦片</a></li>
+					<li class="l"><a href="#">饼干糕点</a></li>
+					<li class="l"><a href="#">蔬菜</a></li>
+					<li class="l"><a href="#">洗衣液</a></li>
+					<li class="l"><a href="#">卷纸</a></li>
+					<li class="l"><a href="#">抽纸</a></li>
+				</ul>
+				<div class="down">
+					<ul class="l littlecircle">
+						<li class="l white"></li>
+						<li class="l"></li>
+						<li class="l"></li>
+					</ul>
+					<ul class="l floor5banner">
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg2.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg3.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="l center">
+				<img src="" data-src="img/floor5img.jpg" alt="" />
+			</div>
+			<div class="r right">
+				<div class="up">
+					<ul class="floor5title">
+						<li class="l">精选特卖</li>
+						<li class="l">粮油生鲜</li>
+						<li class="l">零食酒水</li>
+						<li class="l">纸品湿巾</li>
+						<li class="l">清洁用品</li>
+					</ul>
+				</div>
+				<div class="down">
+					<div class="imgTitle">
+						<a href="#"><img src="" data-src="img/floor5-right.jpg" /></a>
+					</div>
+					<ul class="brandlist">
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor5-logo.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor5-logo.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor5-logo.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor5-logo.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor5-logo.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor5-logo.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor5-logo.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor5-logo.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--------------------------floor6--第六层--------------------------------->
+		<div id="floor6" class="w">
+			<div class="l left">
+				<ul class="up">
+					<li class="l"><a href="#">食用油</a></li>
+					<li class="l"><a href="#">大米</a></li>
+					<li class="l"><a href="#">面粉</a></li>
+					<li class="l"><a href="#">挂面</a></li>
+					<li class="l"><a href="#">厨房调味</a></li>
+					<li class="l"><a href="#">白酒</a></li>
+					<li class="l"><a href="#">啤酒</a></li>
+					<li class="l"><a href="#">水</a></li>
+					<li class="l"><a href="#">麦片</a></li>
+					<li class="l"><a href="#">饼干糕点</a></li>
+					<li class="l"><a href="#">蔬菜</a></li>
+					<li class="l"><a href="#">洗衣液</a></li>
+					<li class="l"><a href="#">卷纸</a></li>
+					<li class="l"><a href="#">抽纸</a></li>
+				</ul>
+				<div class="down">
+					<ul class="l littlecircle">
+						<li class="l white"></li>
+						<li class="l"></li>
+						<li class="l"></li>
+					</ul>
+					<ul class="l floor6banner">
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg2.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg3.jpg" /></a>
+						</li>
+						<li class="l">
+							<a href="#"><img src="" data-src="img/floor1-bannerImg1.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="l center">
+				<ul class="tab1">
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor6-tab-img1.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor6-tab-img2.jpg" alt="" /></a>
+					</li>
+					<li class="l">
+						<a href="#"><img src="" data-src="img/floor6-tab-img3.jpg" alt="" /></a>
+					</li>
+				</ul>
+				<ul class="select">
+					<li class="l over"></li>
+					<li class="l "></li>
+					<li class="l"></li>
+				</ul>
+			</div>
+			<div class="r right">
+				<div class="up">
+					<ul class="floor6title">
+						<li class="l">精选特卖</li>
+						<li class="l">粮油生鲜</li>
+						<li class="l">零食酒水</li>
+						<li class="l">纸品湿巾</li>
+						<li class="l">清洁用品</li>
+					</ul>
+				</div>
+				<div class="down">
+					<ul class="l left">
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor6-img.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor6-img.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor6-img.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor6-img.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor6-img.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="l">
+							<a href="#">
+								<dl>
+									<dt><img src="" data-src="img/floor6-img.jpg" alt="" /></dt>
+									<dd>
+										胡姬花特香花生油3.68L
+										<p>
+											利群价：￥69.90
+										</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+					<ul class="r right">
+						<li>
+							<a href="#"><img src="" data-src="img/img.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+								<li>
+									<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+										<li>
+											<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+												<li>
+													<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+														<li>
+															<a href="#"><img src="" data-src="img/img2.jpg" /></a</li>
+																<li>
+																	<a href="#"><img src="" data-src="img/img.jpg" /></a</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--------------------------content-bottom----------------------------------->
+		<div id="contentBottom" class="w">
+			<ul class="bottom">
+				<li class="l">
+					<h4><a href="#">购物指南</a></h4>
+					<ul>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">会员介绍</a></li>
+						<li><a href="#">发票制度</a></li>
+						<li><a href="#">积分政策</a></li>
+						<li><a href="#">常见问题</a></li>
+					</ul>
+				</li>
+				<li class="l">
+					<h4><a href="#">配送方式</a></h4>
+					<ul>
+						<li><a href="#">自提服务</a></li>
+						<li><a href="#">送货上门</a></li>
+						<li><a href="#">配送范围及时间</a></li>
+						<li><a href="#">全球购配送说明</a></li>
+					</ul>
+				</li>
+				<li class="l">
+					<h4><a href="#">支付方式</a></h4>
+					<ul>
+						<li><a href="#">线上支付</a></li>
+						<li><a href="#">会员介绍</a></li>
+						<li><a href="#">货到付款</a></li>
+						<li><a href="#">利群金卡支付</a></li>
+						<li><a href="#">礼品卡支付</a></li>
+					</ul>
+				</li>
+				<li class="l">
+					<h4><a href="#">售后服务</a></h4>
+					<ul>
+						<li><a href="#">退换货政策</a></li>
+						<li><a href="#">退款说明</a></li>
+						<li><a href="#">品牌售后服务电话</a></li>
+						<li><a href="#">投诉与建议</a></li>
+					</ul>
+				</li>
+				<li class="l">
+					<h4><a href="#">商家服务</a></h4>
+					<ul>
+						<li><a href="#">商家入驻</a></li>
+						<li><a href="#">商家管理规定</a></li>
+						<li><a href="#">商家中心</a></li>
+						<li><a href="#">积分政策</a></li>
+						<li><a href="#">常见问题</a></li>
+					</ul>
+				</li>
+				<li class="l">
+					<h4>利群商城订阅号</h4>
+					<div class="QRImg"><img src="" data-src="img/QR1.jpg" /></div>
+				</li>
+				<li class="l">
+					<h4>利群商城服务号</h4>
+					<div class="QRImg">
+						<img src="" data-src="img/QR2.jpg" />
+						<p><a href="#">更多联盟商户</a></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--------------------------bottomImg----------------------------------->
+		<div id="bottomImg" class="w">
+			<img src="" data-src="img/footer.jpg" alt="" />
+		</div>
+		<!--------------------------footer----------------------------------->
+		<div id="footer" class="w">
+			<ul class="aboutUs">
+				<li class="l"><a href="#">关于我们</a></li>
+				<li class="l"><a href="#">联系我们</a></li>
+				<li class="l"><a href="#">诚聘英才</a></li>
+				<li class="l"><a href="#">手机利群</a></li>
+				<li class="l"><a href="#">销售联盟</a></li>
+				<li class="l"><a href="#">友情连接</a></li>
+				<li class="l"><a href="#">网站合作</a></li>
+				<li class="l"><a href="#">帮助中心</a></li>
+				<li class="l"><a href="#">版权说明</a></li>
+			</ul>
+			<ul class="aboutLiqun">
+				<li class="l"><a href="#">利群集团</a></li>
+				<li class="l"><a href="#">百货集团</a></li>
+				<li class="l"><a href="#">利群网</a></li>
+				<li class="l"><a href="#">利群酒店</a></li>
+				<li class="l"><a href="#">利群房地产</a></li>
+				<li class="l"><a href="#">利群旅行社</a></li>
+				<li class="l"><a href="#">利群药品</a></li>
+				<li class="l"><a href="#">利群影城</a></li>
+				<li class="l"><a href="#">利群水站</a></li>
+				<li class="l"><a href="#">利群家政</a></li>
+			</ul>
+			<p>鲁ICP证09054331号-2 Copyright©2004-2015 利群集团青岛电子商务有限公司 版权所有<img src="" data-src="img/pic1.gif" /></p>
+			<ul class="footerImg">
+				<li class="l">
+					<a href="#"><img src="" data-src="img/footerimg.jpg" /></a>
+				</li>
+				<li class="l">
+					<a href="#"><img src="" data-src="img/footerimg2.jpg" /></a>
+				</li>
+				<li class="l">
+					<a href="#"><img src="" data-src="img/footerimg3.jpg" /></a>
+				</li>
+				<li class="l">
+					<a href="#"><img src="" data-src="img/footerimg4.png" /></a>
+				</li>
+			</ul>
+		</div>
+		<!----------------------------nav-right--------------------------------->
+		<div id="nav-right">
+			<ul>
+				<li><img src="img/nav1.jpg" alt="" /></li>
+				<li><img src="img/nav2.jpg" alt="" /></li>
+				<li><img src="img/nav3.jpg" alt="" /></li>
+				<li><img src="img/nav4.jpg" alt="" /></li>
+				<li><img src="img/nav5.jpg" alt="" /></li>
+				<li><img src="img/nav6.jpg" alt="" /></li>
+				<li><img src="img/nav7.jpg" alt="" /></li>
+				<li><img src="img/nav8.jpg" alt="" /></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var docScrollTop;
+			$(document).scroll(function() {
+				docScrollTop = $("body").prop("scrollTop");
+				if (docScrollTop > 1000) {
+					$("#nav-right").css("display","block");
+					//$("#nav-right img").eq(0).attr("src","img/nav1r.jpg");
+					if(docScrollTop > 1300 && docScrollTop < 1700){
+						$("#nav-right img").eq(1).attr("src","img/nav2r.jpg");
+					}else{
+						$("#nav-right img").eq(1).attr("src","img/nav2.jpg");
+					}
+					if(docScrollTop > 1710 && docScrollTop < 2210){
+						$("#nav-right img").eq(2).attr("src","img/nav3r.jpg");
+					}else{
+						$("#nav-right img").eq(2).attr("src","img/nav3.jpg");
+					}
+					if(docScrollTop > 2220 && docScrollTop < 2580){
+						$("#nav-right img").eq(3).attr("src","img/nav4r.jpg");
+					}else{
+						$("#nav-right img").eq(3).attr("src","img/nav4.jpg");
+					}
+					if(docScrollTop > 2600 && docScrollTop < 2890){
+						$("#nav-right img").eq(4).attr("src","img/nav5r.jpg");
+					}else{
+						$("#nav-right img").eq(4).attr("src","img/nav5.jpg");
+					}
+					if(docScrollTop > 2900 && docScrollTop < 3290){
+						$("#nav-right img").eq(5).attr("src","img/nav6r.jpg");
+					}else{
+						$("#nav-right img").eq(5).attr("src","img/nav6.jpg");
+					}
+					if(docScrollTop > 3300 && docScrollTop < 3650){
+						$("#nav-right img").eq(6).attr("src","img/nav7r.jpg");
+					}else{
+						$("#nav-right img").eq(6).attr("src","img/nav7.jpg");
+					}
+				}else{
+					$("#nav-right").css("display","none");
+				}
+				
+				//var index = $("#nav-right img").index(this);
+				//for(var i=0;i<=$("#nav-right img").length;i++){
+					$("#nav-right img").mouseover(function(){
+						/*index = $(this).index();
+						$(this).children(0).attr("src","img/nav"+(index+1)+"r.jpg");*/
+						var index = $("#nav-right img").index($(this));	
+						console.log(index)
+						$("#nav-right img").eq(index).attr("src","img/nav"+(index+1)+"r.jpg");
+					});
+					$("#nav-right img").mouseout(function(){
+						/*index = $(this).index();
+						$(this).children(0).attr("src","img/nav"+(index+1)+"r.jpg");*/
+						var index = $("#nav-right img").index($(this));	
+						console.log(index)
+						$("#nav-right img").eq(index).attr("src","img/nav"+(index+1)+".jpg");
+					});
+//					for(var j=0;j<=$("#nav-right img").length;j++){
+//						$("#nav-right img").eq(j).("src","img/nav"+j+".jpg");
+//					}
+
+				/*$("h3").click(function(){	
+					var index = $("h3").index($(this));
+					$(".sl_item_ul").eq(index).toggle();
+				});
+*/
+				
+				
+				//}
+			});
+		</script>
+	</body>
+
+</html>
